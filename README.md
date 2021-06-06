@@ -18,3 +18,13 @@ zstyle ':vcs_info:*' enable git
 ```
 4. Press `conttrol x` then `y`and lastly `press enter` to save the changes.
 5. Lastly type `source ~/.zshrc` to reload the terminal zsh configuration.
+
+- Prompt line will be like:
+`'previouse command status' 'current dir name' '> or #>(root or su)'                     'git-branch-name'`
+e.g. Normal prompt line
+    sucess  `✓ Example >                  branch-name`
+    fail    `✗127 Example >               branch-name` 
+
+e.g. Root prompt line
+    success `✓ Example #>              branch-name` 
+    fail    `✗1 Example #>             branch-name`
