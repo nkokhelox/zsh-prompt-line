@@ -23,9 +23,9 @@ zstyle ':vcs_info:*' enable git
 `'previouse command status' 'current dir name' '> or #>(root or su)'                     'git-branch-name'`
 
 e.g. Normal prompt line
-    - sucess  `✓ Example >                  branch-name`
-    - fail    `✗127 Example >               branch-name` 
+- sucess  `✓ Example >                  branch-name`
+- fail    `✗127 Example >               branch-name` 
 
 e.g. Root prompt line
-    - success `✓ Example #>              branch-name` 
-    - fail    `✗1 Example #>             branch-name`
+- success `✓ Example #>              branch-name` 
+- fail    `✗1 Example #>             branch-name`
