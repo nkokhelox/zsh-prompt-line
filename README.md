@@ -6,7 +6,7 @@ How to set it up?
 2. type `nano ~/.zshrc`or `sudo nano ~/.zshrc`
 3. paster the code
 ```
-PROMPT='%(?.%F{green}%B✓%b.%F{red}%B✗%b%?)%f %B%F{240}%1~%f%b %(!.%F{red}%B#>%b$ '
+PROMPT='%(?.%F{green}%B%* ✓%b.%F{red}%B✗%b%?)%f %B%F{240}%1~%f%b %(!.%F{red}%B#>%b$ '
 
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
@@ -20,12 +20,12 @@ zstyle ':vcs_info:*' enable git
 5. Lastly type `source ~/.zshrc` to reload the terminal zsh configuration.
 
 - Prompt line will be like:
-`'previouse command status' 'current dir name' '> or #>(root or su)'                     'git-branch-name'`
+`'previos prompt end time in HH:mm:ss' 'previouse command status' 'current dir name' '> or #>(root or su)'                     'git-branch-name'`
 
 e.g. Normal prompt line
-- success  `✓ Example >                  branch-name`
-- fail    `✗127 Example >               branch-name` 
+- success  `HH:mm:ss ✓ Example >                  branch-name`
+- fail    `HH:mm:ss ✗127 Example >               branch-name` 
 
 e.g. Root prompt line
-- success `✓ Example #>              branch-name` 
-- fail    `✗1 Example #>             branch-name`
+- success `HH:mm:ss ✓ Example #>              branch-name` 
+- fail    `HH:mm:ss ✗1 Example #>             branch-name`

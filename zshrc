@@ -1,4 +1,4 @@
-PROMPT='%(?.%F{green}%B✓%b.%F{red}%B✗%b%?)%f %B%F{240}%1~%f%b %(!.%F{red}%B#>%b%f.>) '
+PROMPT='%(?.%F{green}%B%* ✓%b.%F{red}%B✗%b%?)%f %B%F{240}%1~%f%b %(!.%F{red}%B#>%b%f.>) '
 
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
